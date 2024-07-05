@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./icons/icon.svg" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Kicker Anime</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="./img/Logo (3).svg" alt="Logotipo" /></div>
+      <nav class="nav">
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a class="active" href="../index.html">Início</a></li>
+          <li><a class="active" href="#">Episódios</a></li>
+          <li>
+            <a class="active" href="../Personagem/personagem.html"
+              >Personagens</a
+            >
+          </li>
+          <li><a class="active" href="../index.html">Planos</a></li>
+          <li><a class="active" href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="perfil-usuario">
+        <div class="opcoes-usuario">
+          <a href="#"
+            ><img id="lupa" src="./icons/icons8-pesquisar.svg" alt="Search"
+          /></a>
+          <a href="#"
+            ><img
+              id="notificacao"
+              src="./icons/icons-lembrete.svg"
+              alt="Notifications"
+          /></a>
+        </div>
+        <img src="./img/Zenitsu.jpg" alt="Foto do Perfil" />
+        <span id="nome-usuario">Junior</span>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container-fluid p-0">
+        <video id="meuVideo" autoplay loop muted playsinline class="w-100">
+          <source
+            src="./video/Tanjiros-Burning-Spirit-Wallpaper-BattleCanyon-Visuals-Official.mp4"
+            type="video/mp4"
+          />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="overlay">
+          <div class="content text-center text-white">
+            <h1 class="display-4">#1 Mais Popular</h1>
+            <h2>Demon Slayer</h2>
+            <p class="lead">Acompanhe Tanjiro e Nezuko em suas aventuras...</p>
+            <div class="classificacao mb-4">
+              <span>★★★★★</span>
+            </div>
+            <!-- Botões separados -->
+            <div class="button-container mt-4">
+              <a
+                href="#"
+                class="btn custom-btn"
+                data-toggle="modal"
+                data-target="#trailerModal"
+                >Assista</a
+              >
+              <a
+                href="#"
+                class="btn custom-btn"
+                data-toggle="modal"
+                data-target="#trailerModal"
+                >Trailer</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal para o trailer do YouTube -->
+      <div
+        class="modal fade"
+        id="trailerModal"
+        tabindex="-1"
+        aria-labelledby="trailerModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="trailerModalLabel">
+                Assista ao Trailer
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  id="trailerVideo"
+                  src=""
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+      <div class="row">
+        <!-- Episódio Atual -->
+        <div class="col-md-8">
+          <h2>Episódio Atual</h2>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">
+                E4 - Para colocar um sorriso no seu rosto
+              </h5>
+              <p class="card-text">
+                Tanjirou chega à próxima fase do treinamento Hashira...
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Lançado em 2 jun 2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Notícias Recentes -->
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Notícias Recentes</h5>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <img src="./img/No2.jpg" alt="Notícia 1" class="img-fluid" />
+                  <h5 class="mt-2">Lançamento do Novo Filme de Demon Slayer</h5>
+                  <p class="card-text">
+                    O novo filme de Demon Slayer está chegando aos cinemas em
+                    breve...
+                  </p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <img
+                    src="./img/Noticia1.jpg"
+                    alt="Notícia 2"
+                    class="img-fluid"
+                  />
+                  <h5 class="mt-2">Entrevista com o Criador de Demon Slayer</h5>
+                  <p class="card-text">
+                    Em uma entrevista exclusiva, o criador de Demon Slayer fala
+                    sobre...
+                  </p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <img
+                    src="./img/Not3.webp"
+                    alt="Notícia 3"
+                    class="img-fluid"
+                  />
+                  <h5 class="mt-2">Novidades da Próxima Temporada</h5>
+                  <p class="card-text">
+                    Confira as novidades e o que esperar da próxima temporada de
+                    Demon Slayer...
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Episódios Anteriores e Notícias Recentes -->
+        <div class="col-md-4">
+          <h2>Episódios Anteriores</h2>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <img src="./img/EP 4.jpg" alt="E4" class="img-fluid" />
+              <h5 class="mt-2">E4 - Para colocar um sorriso no seu rosto...</h5>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <img src="./img/EP 3.jpg" alt="E3" class="img-fluid" />
+              <h5 class="mt-2">E3 - Tanjiro Completamente Recuperado!!</h5>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <img src="./img/E2.png" alt="E2" class="img-fluid" />
+              <h5 class="mt-2">E2 - A dor do Pilar da Água, Giyu Tomioka</h5>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-center"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Comentários -->
+      <section class="container mt-5">
+        <h2>Deixe seu comentário</h2>
+        <div class="form-group">
+          <textarea
+            class="form-control"
+            id="comentario"
+            rows="3"
+            placeholder="Deixe seu comentário aqui"
+          ></textarea>
+          <button class="btn" type="submit">Enviar</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="top-section">
+        <div class="social-media">
+          <p>Siga a Kicker nas redes sociais</p>
+          <div class="icons">
+            <a href="#"><img src="./icons/tik-tok.svg" alt="TikTok" /></a>
+            <a href="#"><img src="./icons/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="./icons/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="./icons/youtube.svg" alt="YouTube" /></a>
+            <a href="#"><img src="./icons/facebook.svg" alt="Facebook" /></a>
+          </div>
+        </div>
+        <div class="app-download">
+          <p>Obtenha o app Kicker Anime</p>
+          <p>Para Android e iOS</p>
+          <div class="qr-code">
+            <img src="./icons/QRCode.svg" alt="QR Code" />
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <nav class="nav-footer">
+          <a href="#">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">FAQ</a>
+          <a href="#">Ajuda</a>
+          <a href="#">Trabalhe Conosco</a>
+          <a href="#">Política de privacidade</a>
+        </nav>
+        <p class="copyright">© Kickeres Animes</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
